@@ -1,0 +1,51 @@
+/* Fonts & Colors */
+:root {
+    --primary: #ff6b81;  /* Romantic pink */
+    --secondary: #ffd3b6; /* Soft peach */
+    --dark: #4a4a4a;
+    --light: #fff9f9;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--light);
+    color: var(--dark);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  /* Landing Page */
+  .landing {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), 
+                url('../images/landing-bg.jpg') no-repeat center/cover;
+    text-align: center;
+  }
+  
+  .landing h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+  }
+  
+  .enter-button {
+    padding: 12px 30px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .enter-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255, 107, 129, 0.4);
+  }

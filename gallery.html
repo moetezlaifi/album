@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Memories ❤️</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/gallery.css">
+</head>
+<body>
+  <header>
+    <h1>Our Journey Together</h1>
+    <button id="music-toggle">🔊 Play Music</button>
+  </header>
+  
+  <div class="gallery-grid">
+    <!-- Photos will be loaded dynamically via JS -->
+  </div>
+
+  <!-- Fullscreen Photo Viewer (hidden by default) -->
+  <div class="photo-viewer" id="photo-viewer">
+    <span class="close-btn">&times;</span>
+    <img id="fullscreen-photo" src="" alt="Our Memory">
+    <div class="love-note" id="love-note"></div>
+  </div>
+
+  
+<audio id="background-music" loop>
+    <source src="assets/perfect.mp3" type="audio/mpeg">
+    Your browser doesn't support audio.
+  </audio>
+
+  <script src="scripts/main.js"></script>
+  <script src="scripts/gallery.js"></script>
+</body>
+</html>
